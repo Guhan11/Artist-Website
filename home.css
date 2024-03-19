@@ -1,0 +1,113 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+.sidebar ul{
+    display: flex;
+    height: 10vh;
+    justify-content: end;
+    width: 100  vw;
+    padding-left: 15px;
+    background: linear-gradient(to bottom, rgba(222, 0, 170, 0.211), rgb(117, 55, 101));
+    align-items: center;
+}
+.sidebar ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sidebar ul li a{
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    border-radius: 20px;
+    color: rgb(255, 231, 249)    ;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: x-large;
+    
+    }
+.sidebar ul li a:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: block;
+    align-items: center;
+    transform: scale(1.1);
+    justify-content: center;
+        background-color: rgba(239, 197, 225, 0.926);
+        width: auto;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border-radius: 50px;
+        color: rgb(0, 0, 0);
+    border: 1px solid #ffffff;
+    }
+h2{
+    display: flex;
+    width: 55vw;
+    color: #fce8eb;
+    justify-content: start;
+    align-items: start;
+}   
+.main-content{
+    display: flex;
+    /* background-color: blanchedalmond; */
+}
+.left-main{
+    margin-top: 10px;
+    height: 89.9vh;
+    width: 50vw;    
+}
+.dd{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    height: 50vh ;
+    width: 60vw;
+    /* background-color: rgb(157, 110, 48); */
+    font-size: xx-large;
+}
+.slogan{
+    display: flex;
+    justify-content: center;
+    align-items: first baseline;   
+    font-size: x-large;
+    height: 5vh;
+    width: 66vw;
+    padding: 11px;
+}
+.myworks{
+    display: flex;
+    justify-content: center ;
+    height: 10vh;
+    width: 60vw;
+}
+.myworks a{
+    height: 50px;
+    width: 100px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(217, 255, 0);
+    text-decoration: none;
+}
+.frontimage{
+    margin-left: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    height: 90vh;
+    width: 35vw;
+}
+.frontimage img{
+    height: 80vh;
+    width: 45vw; 
+}
