@@ -3,17 +3,13 @@
         margin: 0%;
     }
 
-    /* .drawings-main{
-        background-image: url(drawing-background.jpg);
-        background-size: cover;
-    } */
     .sidebar ul{
         display: flex;
         height: 10vh;
         justify-content: end;
         width: 100  vw;
         padding-left: 15px;
-        background: linear-gradient(to bottom, rgba(222, 0, 170, 0.211), rgb(117, 55, 101));
+        background: linear-gradient(to bottom, #ff77a9, #7d3643);
         align-items: center;
     }
     .sidebar ul li{
@@ -62,6 +58,7 @@
         align-items: start;
     }
     .main-content{
+        
         margin-left: 0;
         /* padding: 20px;*/
         display: block;
@@ -85,6 +82,8 @@
         background-color: #fcd7de;
     }
     .image{
+   background-image: url(drawing-background.jpg);
+        background-size: cover;
         display: flex;
         justify-content: center;
         align-items: center;

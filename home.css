@@ -1,18 +1,30 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 *{
+
     padding: 0%;
     margin: 0%;
 }
+.main-content{
+ 
+background-image: url(home-background.png);
+background-size: cover;
+}
+h1, h2, h3 {
+    color: rgb(255, 255, 255); /* Text color */
+ 
+    font-family: 'Montserrat', sans-serif;}
+
 .sidebar ul{
     display: flex;
     height: 10vh;
     justify-content: end;
     width: 100  vw;
     padding-left: 15px;
-    background: linear-gradient(to bottom, rgba(222, 0, 170, 0.211), rgb(117, 55, 101));
-    align-items: center;
+    background: linear-gradient(to bottom, #ff77a9, #7d3643);
 }
 .sidebar ul li{
-    display: flex;
+    display:  flex;
     justify-content: center;
     align-items: center;
 }
@@ -74,29 +86,70 @@ h2{
     /* background-color: rgb(157, 110, 48); */
     font-size: xx-large;
 }
+
+.frontimage img,
+.dd h1,
+.slogan h3 , .myworks a{
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.frontimage img  {
+
+    animation: fadeInUp 2s   ease forwards 0.5s;
+}
+.dd h1 {
+
+    animation: fadeInUp 2s   ease forwards 1s;
+}
+
+.slogan h3 {
+    animation: fadeInUp 1.5s ease forwards 2s;
+}
+
+.myworks a {
+    animation: fadeInUp 1s ease forwards 2.5s;
+}
 .slogan{
     display: flex;
     justify-content: center;
     align-items: first baseline;   
     font-size: x-large;
-    height: 5vh;
-    width: 66vw;
+    height: 3vh;
+    width: 64vw;
     padding: 11px;
 }
 .myworks{
+    
     display: flex;
     justify-content: center ;
     height: 10vh;
     width: 60vw;
+    /* background-color: violet; */
 }
 .myworks a{
-    height: 50px;
-    width: 100px;
-    border-radius: 10px;
+    font-size: x-large;
+    color: rgb(255, 247, 247);
+    background-image: url(mywork-image.png);
+    background-size: cover;  
+    background-color: transparent;
+    height: 11vh;
+    width: 20vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(217, 255, 0);
+    /* background-color: rgb(217, 255, 0); */
     text-decoration: none;
 }
 .frontimage{
@@ -104,10 +157,11 @@ h2{
     display: flex;
     justify-content: center;
     align-items: end;
-    height: 90vh;
+    height: 92vh;
     width: 35vw;
+  
 }
 .frontimage img{
-    height: 80vh;
+    height: 82vh;
     width: 45vw; 
 }
