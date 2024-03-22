@@ -77,12 +77,14 @@ h2{
     width: 100vw;
 }
 .left-main{
+    position: relative;
     margin-right: 25PX;
     height: 60vh;
     width: 35vw;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 }
 .right-main{
+    position: relative;
     margin-left: 25px;
     height: 60vh;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
@@ -147,9 +149,7 @@ li{
     align-items: center ;
     font-size: x-large;
     height: 5vh;
-    /* padding-top: 20px; */
     height: 30%;
-    /* padding: 10px; */
 }
 
 .p-details ul li,.d-details ul li{
@@ -176,6 +176,11 @@ li{
     text-decoration: none;
 
 }
+
+.left-main:hover + .left-image {
+    opacity: 1; /* Show the left image when left-main is hovered */
+}
+
 .left-main:hover,.right-main:hover,.p-order a:hover,.d-order a:hover{
     background-color: #9f3b5b;  
     color: rgb(255, 255, 255);
@@ -209,5 +214,40 @@ li{
         text-shadow: none;
     }
 }
+.left-image {
+    display: block;
+    justify-content: flex-start;
+    /* background-color:yellowgreen ; */
+    height: 71vh;
+    width: 75vw;
+    position: absolute;
+   
+}
+.left-image img{
+    align-items: center;
+    justify-content: center;
+    height: 115px;
+   
+}
 
-
+.right-image {
+    display: flex;
+    justify-content: flex-end;
+    /* background-color:yellowgreen ; */
+    height: 71vh;
+    width: 35vw;
+    position: absolute;
+    margin-left: 39%;
+    
+}
+.right-image img{
+    align-items: center;
+    justify-content: center;
+    height: 115px;
+}
+.left-main:hover ~ .left-image{
+    opacity: 0;/* Hide the left image when .left-main is hovered */
+}
+.left-main:not(:hover) ~ .left-image {
+    opacity: 1; /* Show the left image when not hovering over .left-main */
+}
