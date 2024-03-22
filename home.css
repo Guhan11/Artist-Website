@@ -13,7 +13,8 @@ background-size: cover;
 h1, h2, h3 {
     color: rgb(255, 255, 255); /* Text color */
  
-    font-family: 'Montserrat', sans-serif;}
+    font-family: 'Montserrat', sans-serif;
+}
 
 .sidebar ul{
     display: flex;

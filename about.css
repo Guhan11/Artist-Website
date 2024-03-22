@@ -1,8 +1,20 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 *{
-    margin: 0%;
+
     padding: 0%;
+    margin: 0%;
 }
+.main-content{
+ 
+background-image: url(home-background.png);
+background-size: cover;
+}
+h1, h2, h3 {
+    color: rgb(255, 255, 255); /* Text color */
+ 
+    font-family: 'Montserrat', sans-serif;}
+
 .sidebar ul{
     display: flex;
     height: 10vh;
@@ -56,3 +68,146 @@ h2{
     justify-content: start;
     align-items: start;
 }  
+.main-content{
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    width: 100vw;
+}
+.left-main{
+    margin-right: 25PX;
+    height: 60vh;
+    width: 35vw;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+.right-main{
+    margin-left: 25px;
+    height: 60vh;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    width: 35vw;
+}
+.p-sketches{
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    font-size: xx-large;
+    height: 5vh;
+}
+.d-sketches{
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    font-size: xx-large;
+    height: 5vh;
+}
+.p-varieties{
+    font-weight: bold;
+    display: flex;
+    justify-content: start;
+    align-items: center ;
+    font-size: x-large;
+    height: 5vh;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.d-varieties{
+    font-weight: bold;
+    display: flex;
+    justify-content: start;
+    align-items: center ;
+    font-size: x-large;
+    height: 5vh;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.p-types,.d-types{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+}
+.p-types ul li,.d-types ul li{
+    list-style-type: none;
+    padding: 8px;
+   
+    text-decoration: none;
+}
+li{
+    padding: 5px;
+}
+.p-details,.d-details{
+    font-weight: bold;
+    display: flex;
+    padding-left: 25px;
+    justify-content: start;
+    align-items: center ;
+    font-size: x-large;
+    height: 5vh;
+    /* padding-top: 20px; */
+    height: 30%;
+    /* padding: 10px; */
+}
+
+.p-details ul li,.d-details ul li{
+    list-style-type: none;
+    padding: 6px;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: large;
+    padding-left: 80px;
+}
+.p-order,.d-order{
+    display: flex;
+    padding-top: 10PX;
+    justify-content: center;
+    align-items: end;
+    height: 5vh;
+ 
+}
+.p-order a,.d-order a{
+
+    color: rgb(0, 0, 0);
+    font-size: larger;
+    font-weight: bold;
+    text-decoration: none;
+
+}
+.left-main:hover,.right-main:hover,.p-order a:hover,.d-order a:hover{
+    background-color: #9f3b5b;  
+    color: rgb(255, 255, 255);
+    .p-order a:hover{
+        background-color: #9f3b5b;  
+        color: rgb(255, 255, 255);
+        animation: glitter 0.5s infinite;
+        transform: scale(1.1);
+    }  
+    .d-order a:hover{
+        background-color: #9f3b5b;  
+        color: white;
+        animation: glitter 0.5s infinite;
+        transform: scale(1.1);
+    } 
+}
+
+
+/* Define the keyframes for the glitter effect */
+@keyframes glitter {
+    0% {
+        color: rgb(255, 255, 255);
+        text-shadow: none;
+    }
+    50% {
+        color: rgb(255, 255, 255);
+        text-shadow: 0 0 5px rgb(255, 255, 255);
+    }
+    100% {
+        color: rgb(255, 255, 255);
+        text-shadow: none;
+    }
+}
+
+
